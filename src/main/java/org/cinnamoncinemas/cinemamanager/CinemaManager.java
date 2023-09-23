@@ -1,4 +1,6 @@
-package org.cinnamoncinemas;
+package org.cinnamoncinemas.cinemamanager;
+
+import org.cinnamoncinemas.cinema.Cinema;
 
 import java.util.List;
 
