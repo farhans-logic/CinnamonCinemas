@@ -25,9 +25,9 @@ The Cinnamon Cinemas App is a Java application that helps movie theatre managers
 
 - The app will continuously allocate seats to customers until there are no more seats available.
 - Customers orders are assigned a random number of seats between 1 and 5 to account for edge cases.
-- The app will indicate if a customer books
+- The app will indicate if a customer books and:
   - an invalid amount if seats outwith the allowable range from 1 to 3
-  - if available seating is low (less than 3 seats remaining)
+  - too much seating if available seating is low (less than 3 seats remaining)
   - if all seats are booked.
 - The app will display the customer's request, allocated seats (if available), and the remaining free seats.
 
