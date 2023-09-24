@@ -5,7 +5,7 @@ Welcome to the Cinnamon Cinemas App! This Java application allows you to simulat
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [How to Use the App](#how-to-use-the-app)
+- [Usage Instructions](#how-to-use-the-app)
 - [Project Structure](#project-structure)
 - [Exception Handling](#exception-handling)
 - [Contributing](#contributing)
@@ -15,16 +15,20 @@ Welcome to the Cinnamon Cinemas App! This Java application allows you to simulat
 
 The Cinnamon Cinemas App is a Java application that helps movie theatre managers allocate seats to customers. It adheres to specific business requirements and follows real-world scenarios for seat allocation.
 
-## How to Use the App
+## Usage Instructions
 
 1. Clone or download this repository to your local machine.
 2. Open the project in your preferred Java development environment.
 3. Run the `App` class, which contains the main method.
 
-### Usage Instructions
+### How the App Functions
 
 - The app will continuously allocate seats to customers until there are no more seats available.
-- Customers are assigned a random number of seats between 1 and 5.
+- Customers orders are assigned a random number of seats between 1 and 5 to account for edge cases.
+- The app will indicate if a customer books
+  - an invalid amount if seats outwith the allowable range from 1 to 3
+  - if available seating is low (less than 3 seats remaining)
+  - if all seats are booked.
 - The app will display the customer's request, allocated seats (if available), and the remaining free seats.
 
 ### Sample Output
