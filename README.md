@@ -1,6 +1,7 @@
 # Cinnamon Cinemas App
 
-Welcome to the Cinnamon Cinemas App! This Java application allows you to simulate the allocation of seats to customers in a movie theatre.
+Welcome to the Cinnamon Cinemas App! This Java application allows you to simulate the allocation of seats to customers
+in a movie theatre.
 
 ## Table of Contents
 
@@ -13,7 +14,8 @@ Welcome to the Cinnamon Cinemas App! This Java application allows you to simulat
 
 ## Introduction
 
-The Cinnamon Cinemas App is a Java application that helps movie theatre managers allocate seats to customers. It adheres to specific business requirements and follows real-world scenarios for seat allocation.
+The Cinnamon Cinemas App is a Java application that helps movie theatre managers allocate seats to customers. It adheres
+to specific business requirements and follows real-world scenarios for seat allocation.
 
 ## Usage Instructions
 
@@ -25,11 +27,13 @@ The Cinnamon Cinemas App is a Java application that helps movie theatre managers
 
 - The app will continuously allocate seats to customers until there are no more seats available.
 - Customers orders are assigned a random number of seats between 1 and 5 to account for edge cases.
-- The app will indicate if a customer books and:
-  - an invalid amount if seats outwith the allowable range from 1 to 3
-  - too much seating if available seating is low (less than 3 seats remaining)
-  - if all seats are booked.
+- The app will provide feedback in the following situations when a customer makes a booking:
+    - If the customer selects an invalid number of seats outside the allowable range of 1 to 3.
+    - If the customer requests too many seats when the available seating is low (less than 3 seats remaining).
+    - If all seats have already been booked.
 - The app will display the customer's request, allocated seats (if available), and the remaining free seats.
+- The app is intentionally designed to permit one final customer to make a booking even when all seats are occupied,
+  which will then trigger the closure of bookings and halt the app.
 
 ### Sample Output
 
